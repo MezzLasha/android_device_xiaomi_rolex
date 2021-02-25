@@ -18,10 +18,10 @@
 
 DEVICE_PATH := device/xiaomi/rolex
 
-PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH) \
-    vendor/xiomi/rolex \
-    kernel/xiaomi/msm8917
+#PRODUCT_SOONG_NAMESPACES += \
+#    $(DEVICE_PATH) \
+#    vendor/xiomi/rolex \
+#    kernel/xiaomi/msm8917
 
 # Architecture
 TARGET_ARCH 	    	:= arm64
@@ -40,7 +40,7 @@ TARGET_2ND_CPU_VARIANT 	:= cortex-a53
 TARGET_BOARD_PLATFORM 	  := msm8937
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno308
 BUILD_BROKEN_DUP_RULES := true
-
+SELINUX_IGNORE_NEVERALLOWS := true
 # Binder
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
@@ -128,7 +128,7 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /vendor/bin/mm-qcamera-daemon=23
 TARGET_USES_MEDIA_EXTENSIONS := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
-TARGET_TS_MAKEUP             := true
+#TARGET_TS_MAKEUP             := true
 
 # Clang
 INTERNAL_LOCAL_CLANG_EXCEPTION_PROJECTS += $(DEVICE_PATH)
