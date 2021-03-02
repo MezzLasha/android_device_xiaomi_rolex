@@ -47,3 +47,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="rolex" \
     PRODUCT_NAME="rolex" \
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.ssos.cpu=SD425
