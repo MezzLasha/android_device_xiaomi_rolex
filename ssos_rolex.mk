@@ -46,6 +46,9 @@ TARGET_VENDOR_PRODUCT_NAME := rolex
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="rolex" \
     PRODUCT_NAME="rolex" \
+    PRIVATE_BUILD_DESC="rolex-user 7.1.2 N2G47H V9.2.6.0.NCCMIEK release-keys"
+
+BUILD_FINGERPRINT := Xiaomi/rolex/rolex:7.1.2/N2G47H/V9.2.6.0.NCCMIEK:user/release-keys
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.ssos.cpu=SD425
