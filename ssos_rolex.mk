@@ -29,6 +29,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 #random bs from ssos
 SSOS_BUILD_TYPE := OFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_OP_FILE_MANAGER := true
 
 # Inherit from rolex device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)

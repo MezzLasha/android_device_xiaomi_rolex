@@ -214,9 +214,7 @@ PRODUCT_PACKAGES += \
 # Fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
+    libqti_vndfwk_detect.vendor
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -407,11 +405,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
-
-# TimeKeep
-PRODUCT_PACKAGES += \
-    timekeep \
-    TimeKeep
 
 # USB
 PRODUCT_PACKAGES += \
