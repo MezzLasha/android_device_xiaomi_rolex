@@ -27,3 +27,4 @@ allow init {
 # iorapd
 allow init iorapd_data_file:file getattr;
 
+allow init sysfs_battery_supply:file { setattr };

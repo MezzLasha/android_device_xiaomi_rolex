@@ -465,6 +465,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
+# ShapeShift specific properties
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.ssos.cpu=SDM425
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libaacwrapper \
